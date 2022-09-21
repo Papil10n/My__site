@@ -1,0 +1,112 @@
+// Импорт нуля
+@import "null.scss";
+
+// Переменные $name: ;
+$fontFamily: "Heebo";  // шрифт по умолч
+
+$minWidth: 320px;
+$maxWidth: 1152px;
+$maxWidthContainer: 856px;
+$md1: 868px;
+$md2: 992px;
+$md3: 768px;
+$md4: 480px;
+
+
+// Шаблоны %name {};
+
+
+// Миксины @mixin name () {};
+
+
+// Шрифты
+//  &subset=cyrillic-ext    если сайт исп кириллицу 
+//  &display=swap  
+@import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap");
+
+// svg ico fonts
+._icon-fb:before {
+   content: "\e900";
+ }
+ ._icon-insta:before {
+   content: "\e901";
+ }
+ ._icon-Linkedin:before {
+   content: "\e902";
+ }
+ ._icon-twitter:before {
+   content: "\e903";
+ }
+ 
+body {
+  color: #21243d;
+  font-size: 14px;
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  font-family: $fontFamily;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loaded {
+
+  }
+}
+
+._container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+  // @media (max-width: $md1) {
+  //   max-width: 970px;
+  // }
+  @media (max-width: $md1) {
+    max-width: 750px;
+  }
+  @media (max-width: $md2) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+.page {
+  padding-top: 90px;
+  flex: 1 1 auto;
+  @media (max-width: $md3) {
+    padding-top: 30px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__item {
+  transition: opacity 0.3s ease 0s;
+  margin: 0 17px;
+  font-size: 30px;
+  color: inherit;
+  @media (min-width: $md2) {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+}
+
+// Стиль
+@import "header.scss";
+@import "home.scss";
+@import "works.scss";
+@import "blog.scss";
+@import "article.scss";
+@import "contacts.scss";
+@import "ui.scss";
+
+
+@import "footer.scss";
+

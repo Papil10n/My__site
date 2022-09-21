@@ -1,0 +1,43 @@
+.contact__title {
+   margin-bottom: 50px;
+}
+.contact__items {
+   margin-bottom: 50px;
+}
+.contact__item {
+   border-bottom: 1px solid #e0e0e0;
+   padding-bottom: 40px;
+   margin-bottom: 40px;
+   a {
+      color: inherit;
+      cursor: pointer;
+      transition: color 0.3s ease 0s;
+      &:hover {
+         color: #ff6464;
+      }
+   }
+}
+.contact__name {
+   display: inline-block;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 44 / 30 * 100%;
+   @media (max-width: $md3) {
+      font-size: 24px;
+   }
+}
+.contact__link {
+   text-align: center;
+   position: relative;
+   top: -32px;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 35 / 24 * 100%;
+   color: #8695A4;
+   @media (max-width: $md3) {
+      font-size: 20px;
+      left: 25px;
+   }
+}
+.contact__text {
+}

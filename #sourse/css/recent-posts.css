@@ -1,0 +1,10 @@
+.recent-posts {
+  background: #edf7fa;
+  padding: 25px 0 30px 0;
+}
+
+.recent-posts__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

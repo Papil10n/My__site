@@ -1,0 +1,9 @@
+.contact__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__name {
+  display: inline-block;
+}
